@@ -21,24 +21,3 @@ function maxNumber(arr) {
 }
 
 maxNumber([41,41,34,20]);
-
-function max(arr) {
-    let result = "";
-    for (let i = 0; i < arr.length; i++) {
-        let isBigger = false;
-        let num = arr[i];
-        for (let j = i + 1; j < arr.length; j++) {
-            if (num > arr[j]) {
-                isBigger = true;
-            } else {
-                isBigger = false;
-                break;
-            }
-        }
-        if (isBigger === true) {
-            result += num + " ";
-        }
-    }
-    let lastElementIndex = arr.length - 1;
-    console.log(result + `${arr[lastElementIndex]}`);
-}
