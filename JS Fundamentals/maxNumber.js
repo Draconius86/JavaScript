@@ -8,13 +8,14 @@ function maxNumber(arr) {
                 let checkedNum = currentArr[j];
                 if (currNum <= checkedNum) {
                     isBigger = false;
+                    break;
                 } else {
                     isBigger = true;
                 }
-                if (isBigger) {
-                    newArr.push(currNum);
-                }
             }
+        if (isBigger) {
+            newArr.push(currNum);
+        }
     }
     console.log(newArr.join(" "));
 }
