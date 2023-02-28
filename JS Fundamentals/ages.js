@@ -13,3 +13,5 @@ function ages(age) {
         console.log('out of bounds');
     }
 }
+
+ages(2);

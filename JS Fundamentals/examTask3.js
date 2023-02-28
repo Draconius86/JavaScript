@@ -21,7 +21,7 @@ function chatLogger(arr) {
       case "Pin":
         if (chat.includes(element[1])) {
           chat.splice(chat.indexOf(element[1]), 1);
-          chat.push(element[1]);
+          chat.push(element);
         }
         break;
       case "Spam":
